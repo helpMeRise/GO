@@ -1,0 +1,37 @@
+.hero {
+  padding-top: 107px;
+  padding-bottom: 80px;
+}
+
+.hero__title {
+  font-family: Arial-Black, sans-serif;
+  font-weight: 900;
+  font-size: 200px;
+  line-height: 70%;
+  letter-spacing: -0.1em;
+  margin-bottom: 47px;
+}
+
+.hero__subtitle {
+  font-size: 28px;
+  line-height: 50px;
+  padding-left: 211px;
+  padding-bottom: 570px;
+}
+
+.hero__container {
+  position: relative;
+  background: url('../image/hero/GAME_OVER\(Stroke\).svg') top 2px left 5px repeat-y;
+}
+
+.hero__container:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 675px;
+  height: 740px;
+  top: 65px;
+  right: 0;
+  background-image: url('../image/hero/VR.png');
+  z-index: 2;
+}

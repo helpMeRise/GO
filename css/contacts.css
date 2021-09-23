@@ -1,0 +1,68 @@
+.contacts {
+  padding-bottom: 200px;
+}
+
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__title {
+  align-self: center;
+  margin-bottom: 55px;
+}
+
+.contacts__list {
+  max-width: 380px;
+  margin-bottom: 40px;
+}
+
+.contacts__item {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  padding-left: 60px;
+}
+
+.contacts__adress {
+  margin-bottom: 36px;
+  background: url('../image/contacts/location.svg') top 50% left 0 no-repeat;
+}
+
+.contacts__phone {
+  margin-bottom: 11px;
+  background: url('../image/contacts/phone.svg') top 50% left 0 no-repeat;
+}
+
+.contacts__email {
+  background: url('../image/contacts/envelope.svg') top 50% left 0 no-repeat;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.social__item {
+  width: 50px;
+  height: 50px;
+}
+
+.social__link {
+  display: block;
+  height: 100%;
+}
+
+.social__instagram {
+  background: url('../image/contacts/instagram.svg') center / contain no-repeat; 
+}
+.social__vk {
+  background: url('../image/contacts/vk.svg') center / contain no-repeat; 
+}
+.social__facebook {
+  background: url('../image/contacts/facebook.svg') center / contain no-repeat; 
+}
+.social__telegram {
+  background: url('../image/contacts/telegram.svg') center / contain no-repeat; 
+}
