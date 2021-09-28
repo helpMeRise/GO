@@ -85,3 +85,7 @@
   line-height: 16px;
   color: #FFFFFF;
 }
+
+.contacts__text:nth-child(2) {
+  text-align: right;
+}

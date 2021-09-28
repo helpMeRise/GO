@@ -29,6 +29,10 @@
   margin-bottom: 50px;
 }
 
+.about__text_womargin {
+  margin-bottom: 0;
+}
+
 .about__text:first-of-type {
   margin-bottom: 30px;
 }
