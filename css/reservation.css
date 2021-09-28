@@ -1,0 +1,180 @@
+.reservation {
+  background: #440F51;
+  padding-bottom: 80px;
+}
+
+.reservation__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation__title {
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+.reservation__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservation__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation__hall {
+  margin-bottom: 60px;
+}
+
+.reservation__legend {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.reservation__list {
+  display: flex;
+  gap: 60px;
+}
+
+.reservation__item {
+  padding: 7px 15px;
+  flex-basis: 250px;
+  flex-shrink: 0;
+  background: #FFFFFF;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.reservation__label {
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.reservation__entertainment {
+  display: flex;
+  max-width: 980px;
+  flex-direction: row;
+  gap: 100px;
+  margin-bottom: 60px;
+}
+
+.reservation__legend_left {
+  text-align: left;
+  margin-bottom: 23px;
+}
+
+.reservation__console {
+  display: flex;
+  flex-basis: 280px;
+  flex-shrink: 0;
+  gap: 21px;
+}
+
+.reservation__radio {
+  width: 27px;
+  height: 27px;
+  margin-right: 12px;
+}
+
+.reservation__checkbox {
+  width: 27px;
+  height: 27px;
+  margin-right: 12px;
+}
+
+.reservation__input-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.reservation__board-games {
+  display: flex;
+  flex-basis: 300px;
+  flex-shrink: 0;
+  gap: 20px;
+}
+
+.reservation__other {
+  display: flex;
+  flex-shrink: 0;
+  gap: 20px;
+}
+
+.reservation__date {
+  display: flex;
+  flex-direction: row;
+  max-width: 980px;
+  margin-bottom: 40px;
+}
+
+.reservation__legend_date {
+  margin-bottom: 60px;
+}
+
+.reservation__specials {
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 36px 32px;
+  margin-right: 50px;
+}
+
+.reservation__input_small {
+  width: 134px;
+}
+
+.reservation__input_big {
+  width: 100%;
+}
+
+.reservation__personal {
+  max-width: 630px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 14px 50px;
+  margin-top: -20px;
+}
+
+.reservation__label_date {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+
+.reservation__date-input {
+  width: 280px;
+  height: 52px;
+}
+
+.reservation__date-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation__button {
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 16px 50px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #6C0287;
+  margin-left: auto;
+  margin-right: 120px;
+}
+

@@ -54,6 +54,11 @@ p,
 figure,
 fieldset {
   margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  width: 100%;
 }
 
 iframe {
@@ -91,4 +96,5 @@ iframe {
 .button {
   border-radius: 10px;
   text-transform: uppercase;
+  border: none;
 }

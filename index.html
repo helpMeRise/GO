@@ -107,11 +107,12 @@
   </section>
 
   <section class="section reservation" id="reservation">
-    <div class="container">
-      <h2 class="section__title">Забронировать зал просто</h2>
+    <div class="container reservation__container">
+      <h2 class="section__title reservation__title">Забронировать зал просто</h2>
       <form action="" class="form reservation__form">
-        <fieldset class="reservation__hall">
+        <fieldset class="reservation__fieldset reservation__hall">
           <legend class="reservation__legend">Выбери зал</legend>
+
           <ul class="reservation__list">
             <li class="reservation__item">80’s vibes</li>
             <li class="reservation__item">Star wars</li>
@@ -120,88 +121,110 @@
           </ul>
         </fieldset>
 
-        <fieldset class="reservation__entertainment">
+        <fieldset class="reservation__fieldset reservation__entertainment">
           <legend class="reservation__legend">Собери набор развлечений</legend>
 
-          <fieldset class="reservation__console">
-            <legend class="reservation__legend">Приставка:</legend>
+          <fieldset class="reservation__fieldset reservation__console">
+            <legend class="reservation__legend reservation__legend_left">Приставка:</legend>
 
-            <input type="radio" class="reservation__radio" id="ps5">
-            <label for="ps5" class="reservation__label">PlayStation 5</label>
+            <div class="reservation__input-wrap">
+              <input type="radio" class="reservation__radio" id="ps5">
+              <label for="ps5" class="reservation__label">PlayStation 5</label>
+            </div>
 
-            <input type="radio" class="reservation__radio" id="smd">
-            <label for="smd" class="reservation__label">Sega Mega Drive</label>
+            <div class="reservation__input-wrap">
+              <input type="radio" class="reservation__radio" id="smd">
+              <label for="smd" class="reservation__label">Sega Mega Drive</label>
+            </div>
 
-            <input type="radio" class="reservation__radio" id="xbox">
-            <label for="xbox" class="reservation__label">X-box One S</label>
+            <div class="reservation__input-wrap">
+              <input type="radio" class="reservation__radio" id="xbox">
+              <label for="xbox" class="reservation__label">X-box One S</label>
+            </div>
 
-            <input type="radio" class="reservation__radio" id="dendy">
+            <div class="reservation__input-wrap">
+              <input type="radio" class="reservation__radio" id="dendy">
             <label for="dendy" class="reservation__label">Dendy</label>
+            </div>
 
           </fieldset>
 
-          <fieldset class="reservation__board-games">
-            <legend class="reservation__legend">Настольные игры</legend>
+          <fieldset class="reservation__fieldset reservation__board-games">
+            <legend class="reservation__legend reservation__legend_left">Настольные игры</legend>
 
-            <input type="checkbox" class="reservation__radio" id="Jenga">
+            <div class="reservation__input-wrap">
+              <input type="checkbox" class="reservation__checkbox" id="Jenga">
             <label for="Jenga" class="reservation__label">Jenga</label>
+            </div>
 
-            <input type="checkbox" class="reservation__radio" id="Monopoly">
+            <div class="reservation__input-wrap">
+              <input type="checkbox" class="reservation__checkbox" id="Monopoly">
             <label for="Monopoly" class="reservation__label">Monopoly</label>
+            </div>
 
-            <input type="checkbox" class="reservation__radio" id="Манчкин">
+            <div class="reservation__input-wrap">
+              <input type="checkbox" class="reservation__checkbox" id="Манчкин">
             <label for="Манчкин" class="reservation__label">Манчкин</label>
+            </div>
 
-            <input type="checkbox" class="reservation__radio" id="Alias">
+            <div class="reservation__input-wrap">
+              <input type="checkbox" class="reservation__checkbox" id="Alias">
             <label for="Alias" class="reservation__label">Alias</label>
-
+            </div>
           </fieldset>
 
-          <fieldset class="reservation__other">
-            <legend class="reservation__legend">Дополнительно</legend>
+          <fieldset class="reservation__fieldset reservation__other">
+            <legend class="reservation__legend reservation__legend_left">Дополнительно</legend>
 
-            <input type="checkbox" class="reservation__radio" id="karaoke">
+            <div class="reservation__input-wrap">
+              <input type="checkbox" class="reservation__checkbox" id="karaoke">
             <label for="karaoke" class="reservation__label">Караоке</label>
+            </div>
 
-            <input type="checkbox" class="reservation__radio" id="VR">
+            <div class="reservation__input-wrap">
+              <input type="checkbox" class="reservation__checkbox" id="VR">
             <label for="VR" class="reservation__label">VR</label>
-
+            </div>
           </fieldset>
         </fieldset>
 
-        <fieldset class="reservation__date">
-          <legend class="reservation__legend">Выбери дату и время</legend>
+        <fieldset class="reservation__fieldset reservation__date">
+          <legend class="reservation__legend reservation__legend_date">Выбери дату и время</legend>
 
-          <fieldset class="reservation__selects">
-            <select name="" id="" class="reservation__select">
-              <option value="">Дата</option>
-            </select>
-            <select name="" id="" class="reservation__select">
-              <option value="">Время</option>
-            </select>
-            <select name="" id="" class="reservation__select">
-              <option value="">Сколько человек</option>
-            </select>
+          <fieldset class="reservation__fieldset reservation__specials">
+
+            <input type="date" class="reservation__input_small">
+            
+            <input type="time" class="reservation__input_small">
+            
+            <input type="number" class="reservation__input_big">
           </fieldset>
 
-          <fieldset class="reservation__pesonal">
+          <fieldset class="reservation__fieldset reservation__personal">
 
-            <label for="userName" class="reservation__label">Имя</label>
-            <input type="text" class="input" id="userName">
+            <div class="reservation__date-wrap">
+              <label for="userName" class="reservation__label reservation__label_date">Имя</label>
+              <input type="text" class="input reservation__date-input reservation__name" id="userName">
+            </div>
 
-            <label for="userSername" class="reservation__label">Фамилия</label>
-            <input type="text" class="input" id="userSername">
+            <div class="reservation__date-wrap">
+              <label for="phone" class="reservation__label reservation__label_date">Телефон</label>
+              <input type="text" class="input reservation__date-input reservation__phone" id="phone">
+            </div>
 
-            <label for="phone" class="reservation__label">Телефон</label>
-            <input type="text" class="input" id="phone">
+            <div class="reservation__date-wrap">
+              <label for="userSername" class="reservation__label reservation__label_date">Фамилия</label>
+              <input type="text" class="input reservation__date-input reservation__sername" id="userSername">
+            </div>
 
-            <label for="email" class="reservation__label">E-mail</label>
-            <input type="text" class="input" id="email">
-
+            <div class="reservation__date-wrap">
+              <label for="email" class="reservation__label reservation__label_date">E-mail</label>
+              <input type="text" class="input reservation__date-input reservation__email" id="email">
+            </div>
           </fieldset>
         </fieldset>
 
-        <button class="button resrvation__button">Забронировать</button>
+        <button class="button reservation__button">Забронировать</button>
       </form>
     </div>
   </section>
