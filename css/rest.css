@@ -1,0 +1,54 @@
+.rest__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.rest__title {
+  align-self: center;
+  margin-bottom: 41px;
+  max-width: 980px;
+  text-align: center;
+}
+
+.rest__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.rest__item {
+  flex-basis: 380px;
+  min-height: 228px;
+  padding: 166px 40px 0px 40px;
+}
+
+.rest__item_vr {
+  background-image: url('../image/rest/vr.jpg');
+}
+
+.rest__item_audio {
+  background-image: url('../image/rest/audio.jpg');
+}
+
+.rest__item_karaoke {
+  background-image: url('../image/rest/karaoke.jpg');
+}
+
+.rest__item_board-games {
+  background-image: url('../image/rest/board_games.jpg');
+}
+
+.rest__item_ps {
+  background-image: url('../image/rest/ps5.jpg');
+}
+
+.rest__item_cinema {
+  background-image: url('../image/rest/cinema_service.jpg');
+}
+
+.rest__text {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
