@@ -46,8 +46,16 @@
         <p class="hero__subtitle">Новый формат игр и отдыха</p>
 
         <div class="hero__info">
-          <p class="hero__text hero__text_4">Тематических зала</p>
-          <p class="hero__text hero__text_new">Новейшая аппаратура</p>
+          <div class="hero__text-wrap">
+            <span class="hero__text_purple">4</span>
+            <p class="hero__text hero__text_4">Тематических зала</p>
+          </div>
+
+          <div class="hero__text-wrap">
+            <span class="hero__text_purple hero__text_purple-word">new</span>
+            <p class="hero__text hero__text_new">Новейшая аппаратура</p>
+          </div>
+          
         </div>
 
         <button class="button hero__button">Забронировать</button>
@@ -209,7 +217,7 @@
 
             <div class="reservation__date-wrap">
               <label for="phone" class="reservation__label reservation__label_date">Телефон</label>
-              <input type="text" class="input reservation__date-input reservation__phone" id="phone">
+              <input type="text" class="input reservation__date-input reservation__phone reservation__date-input_wide" id="phone">
             </div>
 
             <div class="reservation__date-wrap">
@@ -219,12 +227,12 @@
 
             <div class="reservation__date-wrap">
               <label for="email" class="reservation__label reservation__label_date">E-mail</label>
-              <input type="text" class="input reservation__date-input reservation__email" id="email">
+              <input type="text" class="input reservation__date-input reservation__email reservation__date-input_wide" id="email">
             </div>
           </fieldset>
         </fieldset>
 
-        <button class="button reservation__button">Забронировать</button>
+        <button type="submit" class="button reservation__button">Забронировать</button>
       </form>
     </div>
   </section>
