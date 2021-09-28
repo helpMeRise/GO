@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 107px;
+  padding-top: 51px;
   padding-bottom: 80px;
 }
 
@@ -9,19 +9,70 @@
   font-size: 200px;
   line-height: 70%;
   letter-spacing: -0.1em;
-  margin-bottom: 47px;
+  margin-bottom: 16px;
 }
 
 .hero__subtitle {
   font-size: 28px;
   line-height: 50px;
   padding-left: 211px;
-  padding-bottom: 570px;
+  margin-bottom: 154px;
+}
+
+.hero__info {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 170px;
+}
+
+.hero__text {
+  position: relative;
+  display: flex;
+  max-width: 180px;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.hero__text_4:before {
+  position: absolute;
+  left: 60px;
+  top: -200%;
+  content: '4';
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 141px;
+  color: #CD06FF;
+}
+
+.hero__text_new:before {
+  position: absolute;
+  left: 0;
+  top: -140%;
+  content: 'new';
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 92px;
+  color: #CD06FF;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  padding: 25px 69px;
+  background: #6C0287;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 137px;
 }
 
 .hero__container {
   position: relative;
-  background: url('../image/hero/GAME_OVER\(Stroke\).svg') top 2px left 5px repeat-y;
+  background: url('../image/hero/Component.svg') left 10px top 155px no-repeat;
 }
 
 .hero__container:before {
@@ -34,4 +85,15 @@
   right: 0;
   background-image: url('../image/hero/VR.png');
   z-index: 2;
+}
+
+.hero__down {
+  z-index: 2;
+  position: absolute;
+  bottom: 94px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 97px;
+  height: 97px;
+  background: url("../image/hero/down.png")
 }
