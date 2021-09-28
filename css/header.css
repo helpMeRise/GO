@@ -1,0 +1,29 @@
+.header {
+  padding-top: 30px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  gap: 40px;
+  font-size: 22px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.header__button {
+  padding: 12px 32px;
+  background-color: transparent;
+  color: #fff;
+  border: 3px solid #CD06FF;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+}

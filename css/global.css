@@ -83,3 +83,8 @@ iframe {
   line-height: 50px;
   text-transform: uppercase;
 }
+
+.button {
+  border-radius: 10px;
+  text-transform: uppercase;
+}

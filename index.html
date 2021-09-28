@@ -13,15 +13,26 @@
 <body>
 
   <header class="header">
-    <div class="container">
+    <div class="container header__container">
       <img src="image/header/logo.svg" alt="Логотип" class="logo header__logo">
+
       <nav class="header__nav">
         <ul class="header__list">
-          <li class="header__item">залы</li>
-          <li class="header__item">О нас</li>
-          <li class="header__item">Бронь</li>
-          <li class="header__item">отзывы</li>
-          <li class="header__item">Контакты</li>
+          <li class="header__item">
+            <a href="#halls" class="header__link">залы</a>
+          </li>
+          <li class="header__item">
+            <a href="#about" class="header__link">О нас</a>
+          </li>
+          <li class="header__item">
+            <a href="#reservation" class="header__link">Бронь</a>
+          </li>
+          <li class="header__item">
+            <a href="#feedback" class="header__link">отзывы</a>
+          </li>
+          <li class="header__item">
+            <a href="#contacts" class="header__link">Контакты</a>
+          </li>
         </ul>
       </nav>
       <button class="button header__button">Заказать звонок</button>
@@ -35,18 +46,18 @@
         <p class="hero__subtitle">Новый формат игр и отдыха</p>
 
         <div class="hero__info">
-          <img src="image/hero/4.svg" alt="" class="hero__image">
-          <img src="image/hero/new.svg" alt="" class="hero__image">
+          <p class="hero__text">Тематических зала</p>
+          <p class="hero__text">Новейшая аппаратура</p>
         </div>
 
         <button class="button hero__button">Забронировать</button>
 
-        <a href="#halls" class="hero__down"></a>
+        <a href="#rest" class="hero__down"></a>
       </div>
     </div>
   </section>
 
-  <section class="section rest">
+  <section class="section rest" id="rest">
     <div class="container">
       <h2 class="section__title rest__title">У нас есть все для классного отдыха с друзьями!</h2>
       <ul class="rest__list">
@@ -95,7 +106,7 @@
     </div>
   </section>
 
-  <section class="section reservation">
+  <section class="section reservation" id="reservation">
     <div class="container">
       <h2 class="section__title">Забронировать зал просто</h2>
       <form action="" class="form reservation__form">
@@ -195,7 +206,7 @@
     </div>
   </section>
 
-  <section class="section about">
+  <section class="section about" id="about">
     <div class="container">
       <div class="about__container">
         <h2 class="section__title about__title">о нас</h2>
@@ -218,7 +229,7 @@
     </div>
   </section>
 
-  <section class="section feedback">
+  <section class="section feedback" id="feedback">
     <div class="container">
       <div class="feedback__container">
         <h2 class="section__title feedback__title">Отзывы посетителей</h2>
@@ -263,7 +274,7 @@
     </div>
   </section>
 
-  <section class="footer section contacts">
+  <section class="section contacts" id="contacts">
     <div class="container">
       <div class="contacts__container">
         <h2 class="section__title contacts__title">контакты</h2>
