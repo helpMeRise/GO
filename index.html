@@ -12,16 +12,68 @@
 
 <body>
 
+  <header class="header">
+    <div class="container">
+      <img src="image/header/logo.svg" alt="Логотип" class="logo header__logo">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">залы</li>
+          <li class="header__item">О нас</li>
+          <li class="header__item">Бронь</li>
+          <li class="header__item">отзывы</li>
+          <li class="header__item">Контакты</li>
+        </ul>
+      </nav>
+      <button class="button header__button">Заказать звонок</button>
+    </div>
+  </header>
+
   <section class="section hero">
     <div class="container">
       <div class="hero__container">
         <h1 class="section__title hero__title">GAME OVER</h1>
         <p class="hero__subtitle">Новый формат игр и отдыха</p>
+
+        <div class="hero__info">
+          <img src="image/hero/4.svg" alt="" class="hero__image">
+          <img src="image/hero/new.svg" alt="" class="hero__image">
+        </div>
+
+        <button class="button hero__button">Забронировать</button>
+
+        <a href="#halls" class="hero__down"></a>
       </div>
     </div>
   </section>
 
-  <section class="section halls">
+  <section class="section rest">
+    <div class="container">
+      <h2 class="section__title rest__title">У нас есть все для классного отдыха с друзьями!</h2>
+      <ul class="rest__list">
+        <li class="rest__item">
+          <p class="rest__text">VR очки</p>
+        </li>
+        <li class="rest__item">
+          <p class="rest__text">Аудио-система 5.1
+            с отличным звуком</p>
+        </li>
+        <li class="rest__item">
+          <p class="rest__text">Караоке (4 микрофона)</p>
+        </li>
+        <li class="rest__item">
+          <p class="rest__text">Настольные игры</p>
+        </li>
+        <li class="rest__item">
+          <p class="rest__text">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+        </li>
+        <li class="rest__item">
+          <p class="rest__text">РlаyStаtiоn 5</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section halls" id="halls">
     <div class="container">
       <div class="halls__container">
         <h2 class="section__title halls__title">наши залы</h2>
@@ -40,6 +92,106 @@
           </li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <section class="section reservation">
+    <div class="container">
+      <h2 class="section__title">Забронировать зал просто</h2>
+      <form action="" class="form reservation__form">
+        <fieldset class="reservation__hall">
+          <legend class="reservation__legend">Выбери зал</legend>
+          <ul class="reservation__list">
+            <li class="reservation__item">80’s vibes</li>
+            <li class="reservation__item">Star wars</li>
+            <li class="reservation__item">wild west</li>
+            <li class="reservation__item">neon style</li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="reservation__entertainment">
+          <legend class="reservation__legend">Собери набор развлечений</legend>
+
+          <fieldset class="reservation__console">
+            <legend class="reservation__legend">Приставка:</legend>
+
+            <input type="radio" class="reservation__radio" id="ps5">
+            <label for="ps5" class="reservation__label">PlayStation 5</label>
+
+            <input type="radio" class="reservation__radio" id="smd">
+            <label for="smd" class="reservation__label">Sega Mega Drive</label>
+
+            <input type="radio" class="reservation__radio" id="xbox">
+            <label for="xbox" class="reservation__label">X-box One S</label>
+
+            <input type="radio" class="reservation__radio" id="dendy">
+            <label for="dendy" class="reservation__label">Dendy</label>
+
+          </fieldset>
+
+          <fieldset class="reservation__board-games">
+            <legend class="reservation__legend">Настольные игры</legend>
+
+            <input type="checkbox" class="reservation__radio" id="Jenga">
+            <label for="Jenga" class="reservation__label">Jenga</label>
+
+            <input type="checkbox" class="reservation__radio" id="Monopoly">
+            <label for="Monopoly" class="reservation__label">Monopoly</label>
+
+            <input type="checkbox" class="reservation__radio" id="Манчкин">
+            <label for="Манчкин" class="reservation__label">Манчкин</label>
+
+            <input type="checkbox" class="reservation__radio" id="Alias">
+            <label for="Alias" class="reservation__label">Alias</label>
+
+          </fieldset>
+
+          <fieldset class="reservation__other">
+            <legend class="reservation__legend">Дополнительно</legend>
+
+            <input type="checkbox" class="reservation__radio" id="karaoke">
+            <label for="karaoke" class="reservation__label">Караоке</label>
+
+            <input type="checkbox" class="reservation__radio" id="VR">
+            <label for="VR" class="reservation__label">VR</label>
+
+          </fieldset>
+        </fieldset>
+
+        <fieldset class="reservation__date">
+          <legend class="reservation__legend">Выбери дату и время</legend>
+
+          <fieldset class="reservation__selects">
+            <select name="" id="" class="reservation__select">
+              <option value="">Дата</option>
+            </select>
+            <select name="" id="" class="reservation__select">
+              <option value="">Время</option>
+            </select>
+            <select name="" id="" class="reservation__select">
+              <option value="">Сколько человек</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="reservation__pesonal">
+
+            <label for="userName" class="reservation__label">Имя</label>
+            <input type="text" class="input" id="userName">
+
+            <label for="userSername" class="reservation__label">Фамилия</label>
+            <input type="text" class="input" id="userSername">
+
+            <label for="phone" class="reservation__label">Телефон</label>
+            <input type="text" class="input" id="phone">
+
+            <label for="email" class="reservation__label">E-mail</label>
+            <input type="text" class="input" id="email">
+
+          </fieldset>
+        </fieldset>
+
+        <button class="button resrvation__button">Забронировать</button>
+      </form>
     </div>
   </section>
 
@@ -111,10 +263,13 @@
     </div>
   </section>
 
-  <footer class="footer section contacts">
+  <section class="footer section contacts">
     <div class="container">
       <div class="contacts__container">
         <h2 class="section__title contacts__title">контакты</h2>
+        <div class="contacts__info">
+          
+
         <ul class="contacts__list">
           <li class="contacts__item contacts__adress">г. Москва ул. <br> Аквамарина, 16</li>
           <li class="contacts__item contacts__phone">8 (950) 930 - 28 - 93</li>
@@ -138,7 +293,18 @@
             </a>
           </li>
         </ul>
+        </div>
+        
+        <img src="image/contacts/map.jpg" alt="Карта с адресом" class="contacts__map">
       </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__info">© Game Over, 2021</p>
+      <p class="footer__info">Design by Anastasia Ilina
+        ilina9825@gmail.com</p>
     </div>
   </footer>
 
