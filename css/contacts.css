@@ -1,15 +1,18 @@
 .contacts {
-  padding-bottom: 200px;
+  padding-bottom: 20px;
+  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);;
 }
 
-.contacts__container {
+.contacts__content {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 146px;
 }
 
 .contacts__title {
   align-self: center;
   margin-bottom: 55px;
+  text-align: center;
 }
 
 .contacts__list {
@@ -65,4 +68,20 @@
 }
 .social__telegram {
   background: url('../image/contacts/telegram.svg') center / contain no-repeat; 
+}
+
+.contacts__map {
+  max-width: 680px;
+}
+
+.contacts__copy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__text {
+  max-width: 157px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
 }

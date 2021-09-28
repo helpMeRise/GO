@@ -106,6 +106,7 @@
 }
 
 .reservation__other {
+  max-width: 300px;
   display: flex;
   flex-shrink: 0;
   gap: 20px;
