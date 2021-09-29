@@ -91,7 +91,6 @@
 }
 
 .contacts__text {
-  max-width: 157px;
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
@@ -99,4 +98,12 @@
 
 .contacts__text:nth-child(2) {
   text-align: right;
+}
+
+.contacts__link {
+  display: block;
+}
+
+.contacts__link:hover {
+  text-shadow: 0 0 5px;
 }
