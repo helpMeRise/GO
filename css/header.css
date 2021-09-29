@@ -27,3 +27,16 @@
   font-size: 22px;
   line-height: 30px;
 }
+
+.header__button:hover,
+.header__button:active,
+.header__button:focus {
+  background: #6C0287;
+  border: 3px solid #6C0287;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.header__link:hover {
+  text-shadow: 0 0 5px;
+}

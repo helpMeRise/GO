@@ -55,7 +55,9 @@
 .social__link {
   display: block;
   height: 100%;
+  border-radius: 50%;
 }
+
 
 .social__instagram {
   background: url('../image/contacts/instagram.svg') center / contain no-repeat; 
@@ -68,6 +70,15 @@
 }
 .social__telegram {
   background: url('../image/contacts/telegram.svg') center / contain no-repeat; 
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: #EADEED;
+}
+
+.social__link:active {
+  background-color: #CD06FF;
 }
 
 .contacts__map {

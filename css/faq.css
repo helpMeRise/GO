@@ -17,6 +17,7 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
+  cursor: pointer;
 }
 
 .faq__item:nth-child(even) {
@@ -34,6 +35,16 @@
   background: url('../image/faq/open_white.svg');
 }
 
+.faq__item:nth-child(even):hover:after {
+  position: absolute;
+  content: '';
+  width: 46px;
+  height: 46px;
+  top: 20px;
+  right: 70px;
+  background: url('../image/faq/open_white_hover.svg');
+}
+
 .faq__item:nth-child(odd):after {
   position: absolute;
   content: '';
@@ -42,6 +53,16 @@
   top: 20px;
   right: 70px;
   background: url('../image/faq/open_purple.svg');
+}
+
+.faq__item:nth-child(odd):hover:after {
+  position: absolute;
+  content: '';
+  width: 46px;
+  height: 46px;
+  top: 20px;
+  right: 70px;
+  background: url('../image/faq/open_purple_hover.svg');
 }
 
 .faq__item:not(:last-child) {

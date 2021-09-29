@@ -54,6 +54,13 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  cursor: pointer;
+}
+
+.reservation__item:hover,
+.reservation__item:focus,
+.reservation__item:active {
+  background: #EADEED;
 }
 
 .reservation__label {
@@ -184,3 +191,16 @@
   margin-right: 100px;
 }
 
+.input:focus {
+  background: #FFFFFF;
+  border: 2px inset #CD06FF;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.reservation__button:hover,
+.reservation__button:active,
+.reservation__button:focus {
+  background: #840AA3;
+  color: #ffffff;
+}

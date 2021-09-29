@@ -66,6 +66,12 @@
   color: #FFFFFF;
 }
 
+.hero__button:hover,
+.hero__button:active,
+.hero__button:focus {
+  background: #840AA3;
+}
+
 .hero__container {
   min-height: 815px;
   position: relative;
@@ -93,4 +99,12 @@
   width: 97px;
   height: 97px;
   background: url("../image/hero/down.png")
+}
+
+.hero__down:hover {
+  background: url("../image/hero/down_hover.svg")
+}
+
+.hero__down:active {
+  background: url("../image/hero/down_active.svg")
 }
