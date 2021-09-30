@@ -20,6 +20,11 @@
   flex-basis: 380px;
   min-height: 228px;
   padding: 166px 40px 0px 40px;
+  transition: .2s;
+}
+
+.rest__item:hover {
+  transform: scale(1.1)
 }
 
 .rest__item_vr {

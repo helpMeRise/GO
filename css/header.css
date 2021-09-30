@@ -26,6 +26,7 @@
   font-weight: bold;
   font-size: 22px;
   line-height: 30px;
+  transition: background-color, border .2s;
 }
 
 .header__button:hover,
@@ -35,6 +36,10 @@
   border: 3px solid #6C0287;
   box-sizing: border-box;
   border-radius: 10px;
+}
+
+.header__link {
+  transition: text-shadow .2s;
 }
 
 .header__link:hover {

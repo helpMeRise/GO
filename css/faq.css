@@ -18,11 +18,13 @@
   font-size: 24px;
   line-height: 28px;
   cursor: pointer;
+  
 }
 
 .faq__item:nth-child(even) {
   background-color: #440F51;
   color:#fff;
+  
 }
 
 .faq__item:nth-child(even):after {
@@ -33,6 +35,7 @@
   top: 20px;
   right: 70px;
   background: url('../image/faq/open_white.svg');
+  transition: .2s;
 }
 
 .faq__item:nth-child(even):hover:after {
@@ -53,6 +56,7 @@
   top: 20px;
   right: 70px;
   background: url('../image/faq/open_purple.svg');
+  transition: .2s;
 }
 
 .faq__item:nth-child(odd):hover:after {

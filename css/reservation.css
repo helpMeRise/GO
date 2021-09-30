@@ -55,6 +55,7 @@
   text-transform: uppercase;
   color: #000000;
   cursor: pointer;
+  transition: background-color .2s;
 }
 
 .reservation__item {
@@ -196,6 +197,7 @@
   color: #6C0287;
   margin-left: auto;
   margin-right: 100px;
+  transition: background-color, color .2s;
 }
 
 .input:focus {
