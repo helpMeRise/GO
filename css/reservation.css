@@ -42,7 +42,7 @@
   gap: 60px;
 }
 
-.reservation__item {
+.reservation__item-label {
   padding: 7px 15px;
   flex-basis: 250px;
   flex-shrink: 0;
@@ -57,9 +57,16 @@
   cursor: pointer;
 }
 
-.reservation__item:hover,
-.reservation__item:focus,
-.reservation__item:active {
+.reservation__item {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.reservation__item-label:hover,
+.reservation__item-label:focus,
+.reservation__item-label:active {
   background: #EADEED;
 }
 

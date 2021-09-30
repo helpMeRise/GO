@@ -1,10 +1,10 @@
+
 .hero__title {
   font-family: Arial-Black, sans-serif;
   font-weight: 900;
   font-size: 200px;
-  line-height: 70%;
+  line-height: 100%;
   letter-spacing: -0.1em;
-  margin-bottom: 16px;
 }
 
 .hero__subtitle {
@@ -73,9 +73,9 @@
 }
 
 .hero__container {
-  min-height: 815px;
+  min-height: 840px;
   position: relative;
-  background: url('../image/hero/Component.svg') left 10px top 155px no-repeat;
+  background: url('../image/hero/Component.svg') left 10px top 190px no-repeat;
 }
 
 .hero__container:before {
@@ -84,7 +84,7 @@
   display: block;
   width: 675px;
   height: 740px;
-  top: 70px;
+  top: 100px;
   right: 0;
   background-image: url('../image/hero/VR.png');
   z-index: 2;
@@ -93,7 +93,7 @@
 .hero__down {
   z-index: 2;
   position: absolute;
-  bottom: 94px;
+  bottom: 84px;
   left: 50%;
   transform: translateX(-50%);
   width: 97px;

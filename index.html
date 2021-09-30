@@ -121,12 +121,25 @@
         <fieldset class="reservation__fieldset reservation__hall">
           <legend class="reservation__legend">Выбери зал</legend>
 
-          <ul class="reservation__list">
-            <li class="reservation__item">80’s vibes</li>
-            <li class="reservation__item">Star wars</li>
-            <li class="reservation__item">wild west</li>
-            <li class="reservation__item">neon style</li>
-          </ul>
+          <div class="reservation__list">
+
+            <label for="80s" class="reservation__item-label">80’s vibes
+              <input type="radio" class="reservation__item" id="80s">  
+            </label>
+
+            <label for="sw" class="reservation__item-label">Star wars 
+              <input type="radio" class="reservation__item" id="sw"> 
+            </label>
+
+            <label for="ww" class="reservation__item-label">wild west 
+              <input type="radio" class="reservation__item" id="ww"> 
+            </label>
+
+            <label for="ns" class="reservation__item-label">neon style 
+              <input type="radio" class="reservation__item" id="ns"> 
+            </label>
+
+          </div>
         </fieldset>
 
         <fieldset class="reservation__fieldset reservation__entertainment">
