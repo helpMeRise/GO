@@ -58,7 +58,7 @@
   top: 0;
   left: 0;
   font-weight: 900;
-  color: #6C0287;
+  color: var(--purple);
 }
 
 .quote__text:after {
@@ -73,7 +73,7 @@
 
 .quote__text_purple {
   font-weight: 900;
-  color: #6C0287;
+  color: var(--purple);
 }
 
 .quote__author {

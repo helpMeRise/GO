@@ -56,7 +56,7 @@
 
 .hero__button {
   padding: 25px 69px;
-  background: #6C0287;
+  background: var(--purple);
   border: none;
   border-radius: 10px;
   font-weight: bold;
