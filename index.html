@@ -60,7 +60,7 @@
 
         <button class="button hero__button">Забронировать</button>
 
-        <a href="#rest" class="hero__down"></a>
+        <a href="#rest" class="hero__down" aria-label="Ссылка на следующую секцию"></a>
       </div>
     </div>
   </section>
@@ -121,25 +121,29 @@
         <fieldset class="reservation__fieldset reservation__hall">
           <legend class="reservation__legend">Выбери зал</legend>
 
-          <div class="reservation__list">
+          <ul class="reservation__list">
 
-            <label for="80s" class="reservation__item-label">80’s vibes
-              <input type="radio" class="reservation__item" id="80s">  
-            </label>
-
-            <label for="sw" class="reservation__item-label">Star wars 
-              <input type="radio" class="reservation__item" id="sw"> 
-            </label>
-
-            <label for="ww" class="reservation__item-label">wild west 
-              <input type="radio" class="reservation__item" id="ww"> 
-            </label>
-
-            <label for="ns" class="reservation__item-label">neon style 
-              <input type="radio" class="reservation__item" id="ns"> 
-            </label>
-
-          </div>
+            <li class="reservation__item-label">
+              <label for="80s" >80’s vibes
+                <input type="radio" class="reservation__item" id="80s" name="hall">  
+              </label>
+            </li>
+            <li class="reservation__item-label">
+              <label for="sw" >Star wars 
+                <input type="radio" class="reservation__item" id="sw" name="hall"> 
+              </label>
+            </li>
+            <li class="reservation__item-label">
+              <label for="ww" >wild west 
+                <input type="radio" class="reservation__item" id="ww" name="hall"> 
+              </label>
+            </li>
+            <li class="reservation__item-label">
+              <label for="ns" >neon style 
+                <input type="radio" class="reservation__item" id="ns" name="hall"> 
+              </label>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="reservation__fieldset reservation__entertainment">
@@ -148,26 +152,32 @@
           <fieldset class="reservation__fieldset reservation__console">
             <legend class="reservation__legend reservation__legend_left">Приставка:</legend>
 
-            <div class="reservation__input-wrap">
-              <input type="radio" class="reservation__radio" id="ps5">
-              <label for="ps5" class="reservation__label">PlayStation 5</label>
-            </div>
-
-            <div class="reservation__input-wrap">
-              <input type="radio" class="reservation__radio" id="smd">
-              <label for="smd" class="reservation__label">Sega Mega Drive</label>
-            </div>
-
-            <div class="reservation__input-wrap">
-              <input type="radio" class="reservation__radio" id="xbox">
-              <label for="xbox" class="reservation__label">X-box One S</label>
-            </div>
-
-            <div class="reservation__input-wrap">
-              <input type="radio" class="reservation__radio" id="dendy">
-              <label for="dendy" class="reservation__label">Dendy</label>
-            </div>
-
+            <ul class="reservation__wrap reservation__wrap_radio">
+              <li class="reservation__input-wrap">
+                <div class="reservation__input-wrap">
+                  <input type="radio" class="reservation__radio" id="ps5" name="console">
+                  <label for="ps5" class="reservation__label">PlayStation 5</label>
+                </div>
+              </li>
+              <li class="reservation__input-wrap">
+                <div class="reservation__input-wrap">
+                  <input type="radio" class="reservation__radio" id="smd" name="console">
+                  <label for="smd" class="reservation__label">Sega Mega Drive</label>
+                </div>
+              </li>
+              <li class="reservation__input-wrap">
+                <div class="reservation__input-wrap">
+                  <input type="radio" class="reservation__radio" id="xbox" name="console">
+                  <label for="xbox" class="reservation__label">X-box One S</label>
+                </div>
+              </li>
+              <li class="reservation__input-wrap">
+                <div class="reservation__input-wrap">
+                  <input type="radio" class="reservation__radio" id="dendy" name="console">
+                  <label for="dendy" class="reservation__label">Dendy</label>
+                </div>
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="reservation__fieldset reservation__board-games">
@@ -335,21 +345,21 @@
             <li class="contacts__item contacts__phone">8 (950) 930 - 28 - 93</li>
             <li class="contacts__item contacts__email">GameOver@gmail.com</li>
           </ul>
-          <ul class="social">
-            <li class="social__item ">
-              <a href="#" class="social__link social__instagram">
+          <ul class="social" aria-label="Список соц. сетей ">
+            <li class="social__item " >
+              <a href="#" class="social__link social__instagram" aria-label="Ссылка на инстаграм">
               </a>
             </li>
-            <li class="social__item ">
-              <a href="#" class="social__link social__vk">
+            <li class="social__item " >
+              <a href="#" class="social__link social__vk" aria-label="Ссылка на вконтакте">
               </a>
             </li>
-            <li class="social__item ">
-              <a href="#" class="social__link social__facebook">
+            <li class="social__item " >
+              <a href="#" class="social__link social__facebook" aria-label="Ссылка на фейсбук">
               </a>
             </li>
-            <li class="social__item ">
-              <a href="#" class="social__link social__telegram">
+            <li class="social__item " >
+              <a href="#" class="social__link social__telegram" aria-label="Ссылка на телеграм">
               </a>
             </li>
           </ul>
@@ -361,7 +371,7 @@
       <div class="contacts__copy">
         <p class="contacts__text">© Game Over, 2021</p>
         <p class="contacts__text">Design by Anastasia Ilina
-          <a href="mailto:ilina9825@gmail.com" class="contacts__link">ilina9825@gmail.com</a></p>
+          <a href="mailto:ilina9825@gmail.com" class="contacts__link" aria-label="email">ilina9825@gmail.com</a></p>
       </div>
     </div>
   </footer>

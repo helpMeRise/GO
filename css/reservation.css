@@ -58,6 +58,12 @@
   transition: background-color .2s;
 }
 
+.reservation__wrap_radio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .reservation__item {
   position: absolute;
   -webkit-appearance: none;
@@ -65,8 +71,12 @@
   appearance: none;
 }
 
+.reservation__item:focus {
+  background: grey;
+}
+
 .reservation__item-label:hover,
-.reservation__item-label:focus,
+.reservation__item-label:focus-within,
 .reservation__item-label:active {
   background: #EADEED;
 }
