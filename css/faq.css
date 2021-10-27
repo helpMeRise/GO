@@ -18,7 +18,7 @@
   font-size: 24px;
   line-height: 28px;
   cursor: pointer;
-  
+  flex-direction: column;
 }
 
 .faq__item:nth-child(even) {
@@ -27,7 +27,15 @@
   
 }
 
-.faq__item:nth-child(even):after {
+.faq__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.faq__item-plus_active {
+  transform: rotate(45deg);
+}
+
+.faq__item:nth-child(even) .faq__item-plus {
   position: absolute;
   content: '';
   width: 46px;
@@ -38,7 +46,7 @@
   transition: .2s;
 }
 
-.faq__item:nth-child(even):hover:after {
+.faq__item:nth-child(even):hover .faq__item-plus {
   position: absolute;
   content: '';
   width: 46px;
@@ -48,7 +56,7 @@
   background: url('../image/faq/open_white_hover.svg');
 }
 
-.faq__item:nth-child(odd):after {
+.faq__item:nth-child(odd) .faq__item-plus {
   position: absolute;
   content: '';
   width: 46px;
@@ -59,7 +67,7 @@
   transition: .2s;
 }
 
-.faq__item:nth-child(odd):hover:after {
+.faq__item:nth-child(odd):hover .faq__item-plus {
   position: absolute;
   content: '';
   width: 46px;
@@ -69,7 +77,8 @@
   background: url('../image/faq/open_purple_hover.svg');
 }
 
-.faq__item:not(:last-child) {
-  margin-bottom: 20px;
+.faq__text {
+  font-size: 20px;
+  display: block;
+  padding-top: 20px;
 }
-

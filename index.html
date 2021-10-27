@@ -7,6 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d5c99a16-2286-4915-b72d-626e77afbac4&lang=ru_RU" type="text/javascript"></script>
+
+
+  <script defer src="js/js.cookie.min.js"></script>
+
+  <script defer src="js/index.js"></script>
+
   <title>Game Over</title>
 </head>
 
@@ -324,11 +335,36 @@
     <div class="container">
       <h2 class="section__title faq__title">Частые вопросы</h2>
       <ul class="faq__list">
-        <li class="faq__item">Можно ли забронировать комнату онлайн?</li>
-        <li class="faq__item">Могут ли мне вернуть деньги за бронь?</li>
-        <li class="faq__item">Какая комната самая популярная?</li>
-        <li class="faq__item">Как получить VIP карту?</li>
-        <li class="faq__item">Какая комната самая популярная?</li>
+        <li class="faq__item">
+          <h3 class="faq__item_title">
+            <span class="faq__item_title">Можно ли забронировать комнату онлайн?</span>
+          </h3>
+          <p class="faq__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, repellendus! </p>
+        </li>
+        <li class="faq__item">
+          <h3 class="faq__item_title">
+            <span class="faq__item_title">Могут ли мне вернуть деньги за бронь?</span>
+          </h3>
+          <p class="faq__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, repellendus! </p>
+        </li>
+        <li class="faq__item">
+          <h3 class="faq__item_title">
+            <span class="faq__item_title">Какая комната самая популярная?</span>
+          </h3>
+          <p class="faq__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, repellendus! </p>
+        </li>
+        <li class="faq__item">
+          <h3 class="faq__item_title">
+            <span class="faq__item_title">Как получить VIP карту?</span>
+          </h3>
+          <p class="faq__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, repellendus! </p>
+        </li> 
+        <li class="faq__item">
+          <h3 class="faq__item_title">
+            <span class="faq__item_title">Какая комната самая популярная?</span>
+          </h3>
+          <p class="faq__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, repellendus! </p>
+        </li>
       </ul>
     </div>
   </section>
@@ -365,7 +401,7 @@
           </ul>
         </div>
 
-        <img src="image/contacts/map.jpg" alt="Карта с адресом" class="contacts__map">
+        <div id="contacts__map" style="width: 680px; height: 300px"></div>
       </div>
 
       <div class="contacts__copy">
@@ -375,6 +411,12 @@
       </div>
     </div>
   </footer>
+
+  <section class="cookies">
+    <p class="coockies__text">Наш сайт использует cookie</p>
+    <button class=" button cookies__button">Принять</button>
+  </section>
+
 </body>
 
 </html>

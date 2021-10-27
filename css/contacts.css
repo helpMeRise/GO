@@ -82,10 +82,6 @@
   background-color: #CD06FF;
 }
 
-.contacts__map {
-  max-width: 680px;
-}
-
 .contacts__copy {
   display: flex;
   justify-content: space-between;
