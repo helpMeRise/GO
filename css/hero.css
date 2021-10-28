@@ -110,3 +110,7 @@
 .hero__down:active {
   background: url("../image/hero/down_active.svg")
 }
+
+@media (max-width: 1200px) {
+  
+}
