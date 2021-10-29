@@ -21,8 +21,8 @@
 }
 
 .rest__item {
-  flex-basis: 380px;
-  min-height: 228px;
+  width: 380px;
+  height: 228px;
   padding: 166px 40px 0px 40px;
   transition: .2s;
 }
@@ -68,4 +68,128 @@
   font-size: 20px;
   line-height: 28px;
   color: var(--main-color);
+}
+
+@media (max-width: 1220px) {
+  .rest__title {
+    font-size: 30px;
+    line-height: 40px;
+    max-width: 600px;
+  }
+
+  .rest__list {
+    gap: 30px 20px;
+    justify-content: center;
+  }
+  
+  .rest__item {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 172px;
+    padding: 114px 20px 30px 20px;
+  }
+  
+  .rest__item:nth-of-type(3n+2) {
+    transform: translateY(60px);
+  }
+
+  .rest__text {
+    font-size: 20px;
+    line-height: 28px;
+    width: 247px;
+  }
+
+  .rest__item_cinema {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .rest__title {
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 500px;
+  }
+
+  .rest__list {
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .rest__item {
+    width: 334px;
+    height: 200px;
+    padding: 132px 30px 40px 30px;
+  }
+  
+  .rest__item:nth-of-type(3n+2) {
+    transform: translateY(0);
+  }
+
+  .rest__text {
+    width: 265px;
+  }
+
+  .rest__item_cinema {
+    padding-top: 132px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rest__list {
+    gap: 20px;
+  }
+  
+  .rest__item {
+    width: 210px;
+    height: 130px;
+    padding: 60px 10px 30px 10px;
+  }
+  
+  .rest__item:nth-of-type(3n+2) {
+    transform: translateY(0);
+  }
+
+  .rest__text {
+    width: 165px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .rest__item_cinema {
+    padding-top: 72px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rest {
+    padding: 25px 0;
+  }
+  .rest__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .rest__list {
+    gap: 10px;
+  }
+  
+  .rest__item {
+    width: 135px;
+    max-height: 75px;
+    padding-top: 30px;
+    background-size: cover;
+  }
+
+  .rest__text {
+    width: 105px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .rest__item_cinema {
+    padding-top: 30px;
+  }
 }
