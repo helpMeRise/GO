@@ -69,3 +69,71 @@
 .halls__text-neon {
   max-width: 226px;
 }
+
+@media (max-width: 1220px) {
+  .halls__list {
+    justify-content: center;
+  }
+
+  .halls__item {
+    width: 440px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .halls {
+    padding: 30px 0px;
+  }
+  .halls__item {
+    width: 335px;
+    height: 220px;
+  }
+
+  .halls__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 35px;
+  }
+
+  .halls__text {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .halls__text_80 {
+    max-width: 121px;
+  }
+  
+  .halls__text_sw {
+    max-width: 121px;
+  }
+  
+  .halls__text_ww {
+    max-width: 116px;
+  }
+  
+  .halls__text_neon {
+    max-width: 129px;
+  }
+}
+
+@media (max-width: 480px) {
+  .halls {
+    padding: 15px 0px;
+  }
+  .halls__item {
+    width: 280px;
+    height: 168px;
+  }
+
+  .halls__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .halls__text {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}

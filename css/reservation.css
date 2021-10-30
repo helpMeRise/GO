@@ -157,12 +157,20 @@
   margin-right: 50px;
 }
 
+.reservation__specials_wrap {
+  display: flex;
+  height: 52px;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .reservation__input_small {
   width: 134px;
 }
 
 .reservation__input_big {
   width: 100%;
+  height: 52px;
 }
 
 .reservation__personal {
@@ -222,4 +230,260 @@
 .reservation__button:focus {
   background: #840AA3;
   color: var(--main-color);
+}
+
+@media (max-width: 1220px) {
+  .reservation {
+    padding: 35px 0;
+  }
+    
+  .reservation__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  
+  .reservation__legend {
+    margin-bottom: 25px;
+  }
+
+  .reservation__list {
+    justify-content: space-between;
+  }
+  
+  .reservation__item-label {
+    padding: 10px 20px;
+    flex-basis: 180px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .reservation__entertainment {
+    max-width: 900px;
+    gap: 40px;
+  }
+
+  .reservation__board-games {
+    max-width: 255px;
+  }
+
+  .reservation__other {
+    max-width: 255px;
+  }
+
+  .reservation__legend_date {
+    margin-bottom: 50px;
+  }
+
+  .reservation__date {
+    max-width: 100%;
+    justify-content: space-between;
+  }
+
+  .reservation__button {
+    align-items: flex-end;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .reservation {
+    padding: 50px 0;
+  }
+    
+  .reservation__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .reservation__legend {
+    margin-bottom: 30px;
+  }
+
+  .reservation__list {
+    gap: 0;
+  }
+  
+  .reservation__item-label {
+    padding: 9px 20px;
+    flex-basis: 150px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .reservation__entertainment {
+    max-width: 688px;
+    gap: 65px;
+    flex-wrap: wrap;
+  }
+  .reservation__legend_date {
+    margin-bottom: 50px;
+  }
+
+  .reservation__date {
+    flex-direction: column;
+  }
+
+  .reservation__specials {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-right: 0;
+    margin-bottom: 65px;
+    max-width: 100%;
+  }
+
+  .reservation__specials_wrap {
+    max-width: 280px;
+  }
+
+  .reservation__input_big {
+    width: 300px;
+  }
+
+  .reservation__personal {
+    max-width: 100%;
+    justify-content: space-between;
+  }
+
+  .reservation__button {
+    align-items: flex-end;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 670px) {
+  .reservation {
+    padding: 30px 0;
+  }
+    
+  .reservation__title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .reservation__legend {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .reservation__list {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 20px;
+  }
+
+  .reservation__hall {
+    margin-bottom: 30px;
+  }
+  
+  .reservation__board-games {
+    max-width: 280px;
+  }
+
+  .reservation__label {
+    font-size: 16px;
+    line-height: 18px;
+
+  }
+  
+  .reservation__item-label {
+    padding: 9px 20px;
+    flex-basis: 150px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .reservation__entertainment {
+    max-width: 688px;
+    gap: 25px;
+  }
+  .reservation__legend_date {
+    margin-bottom: 50px;
+  }
+
+  .reservation__date {
+    flex-direction: column;
+    align-items: center;  
+  }
+
+  .reservation__specials {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 55px;
+    max-width: 480px;
+  }
+
+  .reservation__specials_wrap {
+    justify-content: center;
+    width: 480px;
+    max-width: 480px;
+    gap: 12px;
+  }
+
+  .reservation__input_small {
+    max-width: 280px;
+  }
+
+  .reservation__input_big {
+    width: 280px;
+  }
+
+  .reservation__personal {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+  }
+
+  .reservation__date-input_wide {
+    max-width: 280px;
+  }
+
+  .reservation__label {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .reservation__button {
+    align-items: center;
+    margin-left: 0;
+    width: 280px;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 17px 58px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .reservation__list {
+    gap:14px 20px;
+  }
+
+  .reservation__item-label {
+    padding: 6px 20px;
+    flex-basis: 130px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .reservation__entertainment {
+    max-width: 280px;
+  }
+
+  .reservation__specials {
+    max-width: 280px;
+  }
+
+  .reservation__specials_wrap {
+    width: 280px;
+  }
+
+  .reservation__date {
+    max-width: 280px;
+  }
 }
