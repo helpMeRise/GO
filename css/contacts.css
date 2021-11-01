@@ -105,3 +105,165 @@
 .contacts__link:hover {
   text-shadow: 0 0 5px;
 }
+
+.contacts__map-wrapper {
+  width: 680px;
+  height: 274px;
+}
+
+.contacts__br_mobile {
+  display: none;
+}
+
+
+@media (max-width: 1200px) {
+  .contacts__map-wrapper {
+    width: 540px;
+    height: 274px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contacts {
+    padding: 35px 0;
+  }
+
+  .contacts__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .contacts__map-wrapper {
+    width: 540px;
+    height: 274px;
+  }
+
+  .contacts__content {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+
+  .contacts__item {
+    width: 380px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .contacts__br {
+    display: none;
+  }
+
+  .contacts__br_mobile {
+    display: inline;
+  }
+
+  .contacts__adress {
+    padding-left: 0;
+    background-position: top 0 left 100px;
+    background-size: 7%;
+  }
+
+  .contacts__phone {
+    margin-bottom: 27px;
+    background-position: left 30px top 0;
+  }
+
+  .contacts__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social {
+    margin-bottom: 40px;
+  }
+
+  .social__item {
+    max-width: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding: 15px 0px 25px;
+  }
+
+  .contacts__map-wrapper {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .contacts__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .contacts__map-wrapper {
+    max-width: 280px;
+    height: 194px;
+  }
+
+  .contacts__content {
+    margin-bottom: 63px;
+  }
+
+  .contacts__item {
+    width: 280px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contacts__adress {
+    background-position: top 0 left 80px;
+    background-size: 6%;
+    margin-bottom: 10px;
+  }
+
+  .contacts__phone {
+    margin-bottom: 10px;
+    background-position: left 50px top 0;
+    background-size: 7%;
+  }
+
+  .contacts__email {
+    background-position: left 30px top 0;
+    background-size: 7%;
+  }
+
+  .contacts__list {
+    margin-bottom: 10px;
+  }
+
+  .social {
+    margin-bottom: 35px;
+    max-width: 180px;
+  }
+
+  .social__item {
+    max-width: 28px;
+  }
+
+  .contacts__copy {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts__text:nth-child(2) {
+    text-align: center;
+  }
+
+  .contacts__text:first-child {
+    margin-bottom: 19px;
+  }
+
+  .contacts__link {
+    padding-top: 5px;
+  }
+}

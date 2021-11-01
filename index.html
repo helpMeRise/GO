@@ -164,11 +164,11 @@
   <section class="section reservation" id="reservation">
     <div class="container reservation__container">
       <h2 class="section__title reservation__title">Забронировать зал просто</h2>
-      <form action="#" class="form reservation__form">
-        <fieldset class="reservation__fieldset reservation__hall">
+      <form action="https://postman-echo.com/post" method="POST" class="form reservation__form" id="form">
+        <fieldset class="reservation__fieldset reservation__hall" required>
           <legend class="reservation__legend">Выбери зал</legend>
 
-          <ul class="reservation__list">
+          <ul class="reservation__list" >
 
             <li class="reservation__item-label">
               <label for="80s" >80’s vibes
@@ -196,7 +196,7 @@
         <fieldset class="reservation__fieldset reservation__entertainment">
           <legend class="reservation__legend">Собери набор развлечений</legend>
 
-          <fieldset class="reservation__fieldset reservation__console">
+          <fieldset class="reservation__fieldset reservation__console" required>
             <legend class="reservation__legend reservation__legend_left">Приставка:</legend>
 
             <ul class="reservation__wrap reservation__wrap_radio">
@@ -272,34 +272,34 @@
           <fieldset class="reservation__fieldset reservation__specials">
 
             <div class="reservation__specials-wrap">
-              <input type="date" class="input reservation__input reservation__input_small">
+              <input type="date" class="input reservation__input reservation__input_small" required>
 
-              <input type="time" class="input reservation__input reservation__input_small">
+              <input type="time" class="input reservation__input reservation__input_small" required>
             </div>
 
-            <input type="number" class="input reservation__input reservation__input_big">
+            <input type="number" class="input reservation__input reservation__input_big" required>
           </fieldset>
 
           <fieldset class="reservation__fieldset reservation__personal">
 
             <div class="reservation__date-wrap">
               <label for="userName" class="reservation__label reservation__label_date">Имя</label>
-              <input type="text" class="input reservation__date-input reservation__name" id="userName">
+              <input type="text" class="input reservation__date-input reservation__name" id="userName" required>
             </div>
 
             <div class="reservation__date-wrap">
               <label for="phone" class="reservation__label reservation__label_date">Телефон</label>
-              <input type="text" class="input reservation__date-input reservation__phone reservation__date-input_wide" id="phone">
+              <input type="text" class="input reservation__date-input reservation__phone reservation__date-input_wide" id="phone" required>
             </div>
 
             <div class="reservation__date-wrap">
               <label for="userSername" class="reservation__label reservation__label_date">Фамилия</label>
-              <input type="text" class="input reservation__date-input reservation__sername" id="userSername">
+              <input type="text" class="input reservation__date-input reservation__sername" id="userSername" required>
             </div>
 
             <div class="reservation__date-wrap">
               <label for="email" class="reservation__label reservation__label_date">E-mail</label>
-              <input type="text" class="input reservation__date-input reservation__email reservation__date-input_wide" id="email">
+              <input type="text" class="input reservation__date-input reservation__email reservation__date-input_wide" id="email" required>
             </div>
           </fieldset>
         </fieldset>
@@ -414,7 +414,7 @@
     </div>
   </section>
 
-  <!-- <footer class="section contacts" id="contacts">
+  <footer class="section contacts" id="contacts">
     <div class="container">
       <h2 class="section__title contacts__title">контакты</h2>
       <div class="contacts__content">
@@ -422,7 +422,7 @@
         <div class="contacts__info">
 
           <ul class="contacts__list">
-            <li class="contacts__item contacts__adress">г. Москва ул. <br> Аквамарина, 16</li>
+            <li class="contacts__item contacts__adress">г. Москва <span class="contacts__br_mobile"> <br> </span> ул. <span class="contacts__br"> <br> </span>  Усачёва, 29 к3</li>
             <li class="contacts__item contacts__phone">8 (950) 930 - 28 - 93</li>
             <li class="contacts__item contacts__email">GameOver@gmail.com</li>
           </ul>
@@ -446,7 +446,9 @@
           </ul>
         </div>
 
-        <div id="contacts__map" style="width: 680px; height: 300px"></div>
+        <div class="contacts__map-wrapper">
+          <div id="contacts__map" style="width: auto; height: 100%"></div>
+        </div>
       </div>
 
       <div class="contacts__copy">
@@ -456,11 +458,6 @@
       </div>
     </div>
   </footer>
-
-  <section class="cookies">
-    <p class="coockies__text">Наш сайт использует cookie</p>
-    <button class=" button cookies__button">Принять</button>
-  </section> -->
 
 </body>
 

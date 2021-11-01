@@ -1,16 +1,3 @@
-
-// const cookieModal = document.querySelector('.cookies');
-// const cookieBtn = document.querySelector('.cookies__button')
-
-// cookieBtn.addEventListener('click', () => {
-//   cookieModal.classList.remove('cookies__active');
-//   Cookies.set('game-over-cookie', 'true', { expires: 7 });
-// })
-
-// if (!Cookies.get('game-over-cookie')) {
-//   cookieModal.classList.add('cookies__active');
-// }
-
 $('.faq__list').accordion({
   active: true,
   collapsible: true,
@@ -21,14 +8,19 @@ $('.faq__list').accordion({
   }
 });
 
-// ymaps.ready(init);
-//     function init(){
-//         // Создание карты.
-//         var contactsMap = new ymaps.Map("contacts__map", {
-//             center: [55.724090, 37.593342],
-//             zoom: 14
-//         });
-//     }
+ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        const contactsMap = new ymaps.Map("contacts__map", {
+            center: [55.723151, 37.565021],
+            zoom: 15,
+            
+        });
+        
+        const mark = new ymaps.Placemark([55.723151, 37.565021]);
+
+        contactsMap.geoObjects.add(mark);
+    }
 
 const burgerButton = document.querySelector('.header__menu-button');
 const burger = document.querySelector('.burger');
@@ -46,3 +38,21 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.feedback__prev',
   },
 });
+
+const reservationForm = $('.reservation__form');
+
+reservationForm.submit(function(event) {
+    event.preventDefault();
+    $.ajax({
+      url: 'https://postman-echo.com/post',
+      type: 'POST',
+      data: $(this).serialize(),
+      success(data) {
+        $('.reservation__title').text('Спасибо за заявку');
+        $('.reservation__form').slideUp();
+      },
+      error() {
+        $('.reservation__title').text('Попробуйте позже');
+      }
+    })
+  })
