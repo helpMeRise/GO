@@ -6,20 +6,25 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  transform: translateY(-110%);
-  transition: .2s;
+  transform: translate(-110%, -110%);
+  transition: .5s;
   background: #1B1A1B;
 }
 
 .burger__active {
-  transform: translateY(20%);
+  z-index: 3;
+  transform: translate(0px, 20%);
+}
+
+.burger__nav {
+  width: 100%;
 }
 
 .burger__list {
   display: flex;
   flex-direction: column;
-  gap: 40px;
   align-items: center;
+  width: 100%;
 }
 
 .burger__item {
@@ -30,7 +35,25 @@
   line-height: 22px;
   text-transform: uppercase;
   color: #FFFFFF;
+  width: 100%;
+  text-align: center;
   
+}
+
+.burger__link {
+  display: block;
+  width: 100%;
+  padding: 20px 0px;
+  outline: none;
+}
+
+.burger__link:hover {
+  background: #6C0287;
+}
+
+.burger__link:active,
+.burger__link:focus {
+  background: #CD06FF;
 }
 
 .burger__button {

@@ -21,13 +21,13 @@
   flex-direction: column;
 }
 
-.faq__item:nth-child(even) {
+.faq__item-wrap:nth-child(even) .faq__item {
   background-color: #440F51;
   color:#fff;
   
 }
 
-.faq__item:not(:last-child) {
+.faq__item-wrap:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -35,11 +35,11 @@
   background: url('../image/faq/close_white.svg') !important;
 }
 
-.faq__item:nth-child(odd) .faq__item-plus_active {
+.faq__item-wrap:nth-child(odd) .faq__item-plus_active {
   background: url('../image/faq/close_purple.svg') !important;
 }
 
-.faq__item:nth-child(even) .faq__item-plus {
+.faq__item-wrap:nth-child(even) .faq__item-plus {
   position: absolute;
   content: '';
   width: 46px;
@@ -50,11 +50,11 @@
   transition: .2s;
 }
 
-.faq__item:nth-child(even):hover .faq__item-plus {
+.faq__item-wrap:nth-child(even):hover .faq__item-plus {
   background: url('../image/faq/open_white_hover.svg');
 }
 
-.faq__item:nth-child(odd) .faq__item-plus {
+.faq__item-wrap:nth-child(odd) .faq__item-plus {
   position: absolute;
   content: '';
   width: 46px;
@@ -65,14 +65,24 @@
   transition: .2s;
 }
 
-.faq__item:nth-child(odd):hover .faq__item-plus {
+.faq__item-wrap:nth-child(odd):hover .faq__item-plus {
   background: url('../image/faq/open_purple_hover.svg');
+}
+
+.faq__item-wrap:nth-child(odd) .faq__text {
+  background-color: #fff;
+  color: #000;
+}
+
+.faq__item-wrap:nth-child(even) .faq__text {
+  background-color: #000;
+  color: #fff;
 }
 
 .faq__text {
   font-size: 20px;
   display: block;
-  padding-top: 20px;
+  padding: 20px 50px 20px 70px;
   font-weight: normal;
   line-height: 1;
 }
@@ -152,16 +162,16 @@
     font-size: 12px;
   }
 
-  .faq__item:nth-child(even) .faq__item-plus_active,
-  .faq__item:nth-child(odd) .faq__item-plus_active {
+  .faq__item-wrap:nth-child(even) .faq__item-plus_active,
+  .faq__item-wrap:nth-child(odd) .faq__item-plus_active {
     background-size: contain;
     width: 30px;
     height: 30px;
   }
   
 
-  .faq__item:nth-child(even) .faq__item-plus,
-  .faq__item:nth-child(odd) .faq__item-plus {
+  .faq__item-wrap:nth-child(even) .faq__item-plus,
+  .faq__item-wrap:nth-child(odd) .faq__item-plus {
     background-size: contain;
     width: 30px;
     height: 30px;
@@ -170,8 +180,8 @@
     right: 20px;
   }
 
-  .faq__item:nth-child(even):hover .faq__item-plus,
-  .faq__item:nth-child(odd):hover .faq__item-plus {
+  .faq__item-wrap:nth-child(even):hover .faq__item-plus,
+  .faq__item-wrap:nth-child(odd):hover .faq__item-plus {
     background-size: contain !important;
     width: 30px;
     height: 30px;

@@ -100,6 +100,7 @@
 .contacts__link {
   display: block;
   transition: text-shadow .2s;
+  padding-top: 6px;
 }
 
 .contacts__link:hover {

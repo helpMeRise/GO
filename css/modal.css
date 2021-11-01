@@ -18,7 +18,6 @@
 .modal__wrapper {
   position: relative;
   width: 600px;
-  height: 500px;
   background: #440F51;
   padding: 60px 150px 80px;
 }
@@ -65,6 +64,14 @@
   background: #FFFFFF;
   border-radius: 10px;
   padding: 16px 52px;
+  box-shadow: 0 0 20px #fff;
+}
+
+.modal__button:hover,
+.modal__button:active,
+.modal__button:focus {
+  background: #840AA3;
+  color: #fff;
 }
 
 .modal__close {
