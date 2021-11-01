@@ -46,6 +46,7 @@ reservationForm.submit(function(event) {
     $.ajax({
       url: 'https://postman-echo.com/post',
       type: 'POST',
+      headers: {  'Access-Control-Allow-Origin': '*' },
       data: $(this).serialize(),
       success(data) {
         $('.reservation__title').text('Спасибо за заявку');
