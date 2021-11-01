@@ -61,7 +61,7 @@
   padding-left: 40px;
 }
 
-.qoute__text-br {
+.quote__text-br {
   display: none;
 }
 
@@ -109,7 +109,7 @@
 
 @media (max-width: 1200px) {
   .about {
-    padding: 70px 0px 35px;
+    padding: 70px 0px;
   }
 
   .about__title {
@@ -288,7 +288,7 @@
     line-height: 16px;
   }
 
-  .qoute__text-br {
+  .quote__text-br {
     display: inline;
   }
 }

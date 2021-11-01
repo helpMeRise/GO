@@ -37,3 +37,12 @@ burgerButton.addEventListener('click', () => {
   burgerButton.classList.toggle('header__menu-button_active');
   burger.classList.toggle('burger__active');
 })
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: '.feedback__next',
+    prevEl: '.feedback__prev',
+  },
+});

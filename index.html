@@ -11,6 +11,10 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
 
+  <link  rel="stylesheet"  href="css/swiper-bundle.min.css"/>
+
+  <script src="js/swiper-bundle.min.js"></script>
+
   <script src="https://api-maps.yandex.ru/2.1/?apikey=d5c99a16-2286-4915-b72d-626e77afbac4&lang=ru_RU" type="text/javascript"></script>
 
 
@@ -267,7 +271,7 @@
 
           <fieldset class="reservation__fieldset reservation__specials">
 
-            <div class="reservation__specials_wrap">
+            <div class="reservation__specials-wrap">
               <input type="date" class="input reservation__input reservation__input_small">
 
               <input type="time" class="input reservation__input reservation__input_small">
@@ -324,7 +328,7 @@
               <p class="quote__text">GAME OVER — это место незабываемых впечатлений </p>
               <div class="quote__author">
                 <img src="../image/about/boss.jpg" alt="Фотография" class="quote__author-photo">
-                <cite class="quote__author-cite">Аркадий Абакшин, <span class="qoute__text-br"> <br> </span> создатель игровой территории <span class="qoute__text-br"> <br> </span> GAME OVER</cite>
+                <cite class="quote__author-cite">Аркадий Абакшин, <span class="quote__text-br"> <br> </span> создатель игровой территории <span class="quote__text-br"> <br> </span> GAME OVER</cite>
               </div>
             </blockquote>
           </div>
@@ -333,42 +337,46 @@
     </div>
   </section>
 
-  <!-- <section class="section feedback" id="feedback">
+  <section class="section feedback" id="feedback">
     <div class="container">
       <div class="feedback__container">
         <h2 class="section__title feedback__title">Отзывы посетителей</h2>
-        <ul class="feedback__list">
-          <li class="feedback__item">
-            <figure class="feedback__figure">
-              <img src="image/feedback/maks.jpg" alt="Фотография пользователя" class="feedback__photo">
-              <figcaption class="feedback__figcaption">Макс Самойлов</figcaption>
-            </figure>
-            <p class="feedback__review">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба,
-              никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
-          </li>
-          <li class="feedback__item">
-            <figure class="feedback__figure">
-              <img src="image/feedback/oksana.jpg" alt="Фотография пользователя" class="feedback__photo">
-              <figcaption class="feedback__figcaption">Оксана Григорьева</figcaption>
-            </figure>
-            <p class="feedback__review">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе
-              больше нет подобных заведений</p>
-          </li>
-          <li class="feedback__item">
-            <figure class="feedback__figure">
-              <img src="image/feedback/nikita.jpg" alt="Фотография пользователя" class="feedback__photo">
-              <figcaption class="feedback__figcaption">Никита Ященко</figcaption>
-            </figure>
-            <p class="feedback__review">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн,
-              попал в атмосферу космоса</p>
-          </li>
-        </ul>
+        <div class="swiper">
+            <div class="feedback__list swiper-wrapper">
+              <div class="feedback__item swiper-slide">
+                <figure class="feedback__figure">
+                  <img src="image/feedback/maks.jpg" alt="Фотография пользователя" class="feedback__photo">
+                  <figcaption class="feedback__figcaption">Макс Самойлов</figcaption>
+                </figure>
+                <p class="feedback__review">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба,
+                  никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
+              </div>
+              <div class="feedback__item swiper-slide">
+                <figure class="feedback__figure">
+                  <img src="image/feedback/oksana.jpg" alt="Фотография пользователя" class="feedback__photo">
+                  <figcaption class="feedback__figcaption">Оксана Григорьева</figcaption>
+                </figure>
+                <p class="feedback__review">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе
+                  больше нет подобных заведений</p>
+              </div>
+              <div class="feedback__item swiper-slide">
+                <figure class="feedback__figure">
+                  <img src="image/feedback/nikita.jpg" alt="Фотография пользователя" class="feedback__photo">
+                  <figcaption class="feedback__figcaption">Никита Ященко</figcaption>
+                </figure>
+                <p class="feedback__review">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн,
+                  попал в атмосферу космоса</p>
+              </div>
+            </div>
+            <button class="feedback__prev"></button>
+            <button class="feedback__next"></button>
+          </div>
 
       </div>
     </div>
   </section>
 
-  <section class="section faq">
+  <!-- <section class="section faq">
     <div class="container">
       <h2 class="section__title faq__title">Частые вопросы</h2>
       <ul class="faq__list">
