@@ -105,7 +105,7 @@
           
         </div>
 
-        <button class="button hero__button">Забронировать</button>
+        <a href="#reservation" class="button hero__button">Забронировать</a>
 
         <a href="#rest" class="hero__down" aria-label="Ссылка на следующую секцию"></a>
       </div>
@@ -458,6 +458,30 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal">
+    <div class="modal__wrapper">
+      <button class="modal__close" aria-label="Кнопка закрытия модального окна"></button>
+      <h2 class="modal__title">Заказать звонок</h2>
+      <form action="#" class="modal__form">
+        
+        <fieldset class="modal__fieldset">
+          
+
+          <div class="modal__label-wrap">
+            <label for="modalNmae" class="modal__label">Имя</label>
+            <input type="text" class="modal__input" id="modalName" name="modalName" required>
+          </div>
+          <div class="modal__label-wrap">
+            <label for="modalPhone" class="modal__label">Телефон</label>
+            <input type="text" class="modal__input" id="modalPhone" name="modalPhone" required>
+          </div>  
+          <button type="submit" class="button modal__button">Позвонить мне</button>
+          
+        </fieldset>
+      </form>
+    </div>
+  </div>
 
 </body>
 
