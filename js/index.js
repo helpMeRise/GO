@@ -11,15 +11,15 @@
 //   cookieModal.classList.add('cookies__active');
 // }
 
-// $('.faq__list').accordion({
-//   active: true,
-//   collapsible: true,
-//   heightStyle: 'content',
-//   icons: {
-//     header: 'faq__item-plus',
-//     activeHeader: 'faq__item-plus faq__item-plus_active'
-//   }
-// });
+$('.faq__list').accordion({
+  active: true,
+  collapsible: true,
+  heightStyle: 'content',
+  icons: {
+    header: 'faq__item-plus',
+    activeHeader: 'faq__item-plus faq__item-plus_active'
+  }
+});
 
 // ymaps.ready(init);
 //     function init(){
