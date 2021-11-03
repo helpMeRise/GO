@@ -12,10 +12,11 @@
 }
 
 .modal__active {
-  display: flex;
+  overflow: auto;
 }
 
 .modal__wrapper {
+  
   position: relative;
   width: 600px;
   background: #440F51;

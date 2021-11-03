@@ -14,7 +14,7 @@ ymaps.ready(init);
         const contactsMap = new ymaps.Map("contacts__map", {
             center: [55.723151, 37.565021],
             zoom: 15,
-            
+            controls: [],
         });
         
         const mark = new ymaps.Placemark([55.723151, 37.565021]);
@@ -23,11 +23,11 @@ ymaps.ready(init);
     }
 
 const burgerButton = document.querySelector('.header__menu-button');
-const burger = document.querySelector('.burger');
+const nav = document.querySelector('.header__nav');
 
 burgerButton.addEventListener('click', () => {
   burgerButton.classList.toggle('header__menu-button_active');
-  burger.classList.toggle('burger__active');
+  nav.classList.toggle('header__nav_mobile');
 })
 
 const swiper = new Swiper('.swiper', {
@@ -79,7 +79,7 @@ modalForm.submit(function(event) {
 
 const modal = document.querySelector('.modal');
 const modalClose = document.querySelector('.modal__close');
-const burgerModalButton = document.querySelector('.burger__button')
+const burgerModalButton = document.querySelector('.header__button_mobile')
 const headerButton = document.querySelector('.header__button');
 
 burgerModalButton.addEventListener('click', () => {

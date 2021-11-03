@@ -70,7 +70,7 @@
   max-width: 226px;
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 1300px) {
   .halls__list {
     justify-content: center;
   }

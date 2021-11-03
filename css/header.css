@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   padding-top: 30px;
 }
 
@@ -32,6 +33,10 @@
   font-size: 22px;
   line-height: 30px;
   transition: background-color, border .2s;
+}
+
+.header__button_mobile {
+  display: none;
 }
 
 .header__button:hover,
@@ -69,8 +74,74 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 840px) {
   .header__nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    position: absolute;
+    padding-bottom: 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translate(-110%, -110%);
+    transition: .5s;
+    background: #1B1A1B;
+  }
+
+  .header__nav_mobile {
+    z-index: 3;
+    transform: translate(0px, 30%);
+  }
+
+  .header__button_mobile:hover,
+  .header__button_mobile:active,
+  .header__button_mobile:focus {
+    background: var(--purple);
+    border: 3px solid var(--purple);
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+
+  .header__list {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;  
+    gap: 0;
+  }
+
+  .header__item {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    
+  }
+  
+  .header__link {
+    display: block;
+    width: 100%;
+    padding: 20px 0px;
+    outline: none;
+  }
+  
+  .header__link:hover {
+    background: #6C0287;
+  }
+  
+  .header__link:active,
+  .header__link:focus {
+    background: #CD06FF;
+  }
+
+  .header__button_mobile {
     display: none;
   }
 
@@ -135,6 +206,10 @@
     display: none;
   }
 
+  .header__button_mobile {
+    display: flex;
+  }
+
   .header__logo {
     max-width: 66px;
     margin-left: 0;
@@ -146,15 +221,15 @@
   }
 
   .header__menu-button span {
-    height: 3.5px;
+    height: 3.45px;
   }
 
   .header__menu-button:before {
-    height: 3.5px;
+    height: 3.45px;
   }
 
   .header__menu-button:after {
-    height: 3.5px;
+    height: 4.45px;
   }
 
   .header__menu-button_active:before  {
@@ -172,7 +247,7 @@
     align-items: center;
   }
 
-  .burger__button {
+  .header__button_mobile {
     padding: 11px 23px;
     background-color: transparent;
     color: #fff;
@@ -183,5 +258,23 @@
     font-size: 14px;
     line-height: 14px;
     transition: background-color, border .2s;
+  }
+
+  .header__nav {
+    padding-bottom: 25px;
+  }
+
+  .header__nav_mobile {
+    transform: translate(0px, 20%);
+  }
+
+  .header__list {
+    margin-bottom: 25px;
+  }
+
+  .header__link {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 13px 0;
   }
 }

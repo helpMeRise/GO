@@ -29,32 +29,7 @@
 
   <header class="header">
 
-    <div class="burger">
-      <nav class="burger__nav">
-        <ul class="burger__list">
-          <li class="burger__item">
-            <a href="#halls" class="burger__link">залы</a>
-          </li>
-          <li class="burger__item">
-            <a href="#about" class="burger__link">О нас</a>
-          </li>
-          <li class="burger__item">
-            <a href="#reservation" class="burger__link">Бронь</a>
-          </li>
-          <li class="burger__item">
-            <a href="#feedback" class="burger__link">отзывы</a>
-          </li>
-          <li class="burger__item">
-            <a href="#contacts" class="burger__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-
-      <button class="button burger__button">Заказать звонок</button>
-      
-    </div>
-
-    <div class="container header__container">
+     <div class="container header__container">
 
       <button class="header__menu-button">
         <span></span>
@@ -62,25 +37,27 @@
 
       <img src="image/header/logo.svg" alt="Логотип" class="logo header__logo">
 
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="#halls" class="header__link">залы</a>
-          </li>
-          <li class="header__item">
-            <a href="#about" class="header__link">О нас</a>
-          </li>
-          <li class="header__item">
-            <a href="#reservation" class="header__link">Бронь</a>
-          </li>
-          <li class="header__item">
-            <a href="#feedback" class="header__link">отзывы</a>
-          </li>
-          <li class="header__item">
-            <a href="#contacts" class="header__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#halls" class="header__link">залы</a>
+            </li>
+            <li class="header__item">
+              <a href="#about" class="header__link">О нас</a>
+            </li>
+            <li class="header__item">
+              <a href="#reservation" class="header__link">Бронь</a>
+            </li>
+            <li class="header__item">
+              <a href="#feedback" class="header__link">отзывы</a>
+            </li>
+            <li class="header__item">
+              <a href="#contacts" class="header__link">Контакты</a>
+            </li>
+          </ul>
+          <button class="button header__button_mobile">Заказать звонок</button>
+        </nav>    
+
       <button class="button header__button">Заказать звонок</button>
     </div>
   </header>
@@ -93,15 +70,15 @@
         <p class="hero__subtitle">Новый формат игр и отдыха</p>
 
         <div class="hero__info">
-          <div class="hero__text-wrap">
+          <p class="hero__text-wrap">
             <span class="hero__text hero__text_purple">4</span>
-            <p class="hero__text hero__text_4">Тематических зала</p>
-          </div>
+            <span class="hero__text hero__text_4">Тематических зала</span>
+          </p>
 
-          <div class="hero__text-wrap">
+          <p class="hero__text-wrap">
             <span class="hero__text hero__text_purple hero__text_purple-word">new</span>
-            <p class="hero__text hero__text_new">Новейшая аппаратура</p>
-          </div>
+            <span class="hero__text hero__text_new">Новейшая аппаратура</span>
+          </p>
           
         </div>
 
@@ -277,7 +254,11 @@
               <input type="time" class="input reservation__input reservation__input_small" required>
             </div>
 
-            <input type="number" class="input reservation__input reservation__input_big" required>
+            <select class="input reservation__input reservation__input_big" required>
+              <option value="">1 - 3</option>
+              <option value="">4 - 6</option>
+              <option value="">7 - 10</option>
+            </select>
           </fieldset>
 
           <fieldset class="reservation__fieldset reservation__personal">
@@ -423,8 +404,12 @@
 
           <ul class="contacts__list">
             <li class="contacts__item contacts__adress">г. Москва <span class="contacts__br_mobile"> <br> </span> ул. <span class="contacts__br"> <br> </span>  Усачёва, 29 к3</li>
-            <li class="contacts__item contacts__phone">8 (950) 930 - 28 - 93</li>
-            <li class="contacts__item contacts__email">GameOver@gmail.com</li>
+            <li class="contacts__item contacts__phone">
+              <a href="tel:89509302893" class="contacts__link">8 (950) 930 - 28 - 93</a>
+            </li>
+            <li class="contacts__item contacts__email">
+              <a class="contacts__link" href="meilto:GameOver@gmail.com">GameOver@gmail.com</a>
+            </li>
           </ul>
           <ul class="social" aria-label="Список соц. сетей ">
             <li class="social__item " >
